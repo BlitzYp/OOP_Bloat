@@ -1,6 +1,5 @@
 #from data import question_data
 from random import choice
-from typing import List
 import requests
 
 question_data = requests.get("https://opentdb.com/api.php?amount=10&category=18").json()["results"]
